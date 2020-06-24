@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+
+int contador(int array[], int num1, int tamanio, int num, int resultado)
+{
+    int resultado = 0;
+
+    for (int num = 0; num < tamanio; resultado++)
+    {
+      if(array[num] == num1){
+        resultado ++;
+        cout << "El numero de repeticiones del numero colocado en el array es:" << resultado;
+      }
+    }
+
+    return num1;
+}
+
+
+int main()
+{
+  int tamanio;
+  int num;
+  int num1;
+  int resultado;
+  cout << "Ingresar su numero porfavor:" << endl;
+  cin >> num1;      
+  cout << "Ingresar el tama"<<char((164))<<"o del arreglo:" <<endl;
+  cin >> tamanio;
+  cout << "Coloque los numeros que se mostraran dentro del array"<<endl;
+  cin>> num;
+  int array[tamanio];
+  contador(tamanio,
+  
+  
+  contador(num,num1,array[tamanio],resultado);
+
+  
+  
+}
