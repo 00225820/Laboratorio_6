@@ -1,8 +1,7 @@
 #include "iostream"
 
 using namespace std;
-
-void funcionx (int numero [], int t, int n) 
+int funcionx (int array[], int t, int n) 
 {
   
   int repetir = 0;
@@ -10,23 +9,23 @@ void funcionx (int numero [], int t, int n)
   for (int i = 0; i < t; i++)
   {
     
-    if (n == numero[i])
+    if (n == array[i])
      {
        repetir++;
-       numeroarreglo = numero[i];
+       numeroarreglo = array[i];
       }
   }
 
    cout <<"el numero" << numeroarreglo << "se repite en el arreglo" << " " << repetir << endl;
 }
 
-void funciony (int numero[], int t, int n)
+int funciony (int array[], int t, int n)
 {
   for(int i = 0; i < t; i++)
    {
-     if (n == numero[i])
+     if (n == array[i])
      {
-       numero[i] = 0;
+       array[i] = 0;
       }
         
    }
@@ -34,7 +33,7 @@ void funciony (int numero[], int t, int n)
 
 int main()
 {
-  int numero[100], x, numerodeveces=0;
+  int array[100], x, numerodeveces=0;
   cout << endl;
 
   cout <<"El numero en el arreglo se repite: " << endl;
@@ -44,11 +43,11 @@ int main()
   {
     cout << endl;
     cout << i+1 << "digite un numero" << endl;
-    cin >> numero[i];
+    cin >> array[i];
   }
   for(int i = 0; i<x; i++)
   {
-    int n=numero[i];
+    int n=array[i];
      if(n != 0)
     {
       funcionx (numero, x, n);
