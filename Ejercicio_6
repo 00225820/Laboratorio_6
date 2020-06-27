@@ -1,48 +1,41 @@
 #include "iostream"
 
 using namespace std;
-int repeticion (int array[], int tm, int n, int repetir) 
+void repeticion (int array[], int tm, int n) 
 {
-  int i;
-  for (int repetir = 0; repetir < 101; repetir++)
+  int repetir = 0;
+  for (int i = 0; i < tm; i++)
   {
     
     if (n == array[i])
     {
-       repetir++;
+      repetir++;
     }
-    else if(n!= array[i])
-    {
-        repetir=0;
-    }
-   }
-   return n;
      
+    }
+
+  cout <<"el numero elegido: " << n << endl;
+  cout << "se repite en el arreglo:" << repetir << " vez/veces"<< endl;
   
 }
 
 
 int main()
 {
-  int array[100], tm, repetir;
-  int n, i;
+  int array[100], tm, numerodeveces=0;
+  int n;
 
   cout << "Ingrese el tama"<<char(164)<<"o de su arreglo" << endl;
   cin >> tm;
   for (int i= 0; i<tm; i++)
   {
+    cout << endl;
     cout << "Ingrese el numero que sera parte de su arreglo" << endl;
     cin >> array[i];
   }
   cout << "Ingrese un numero para discriminar cuantas veces se repite en el arreglo"<<endl;
   cin >> n;
 
-  repeticion (array,tm,n,repetir);
-  cout <<"el numero elegido: " << n << endl;
-  cout << "se repite en el arreglo:" << repetir << "vez/veces"<< endl;
-    
-    
-
- 
+  repeticion (array, tm, n);
   return 0;
  }
